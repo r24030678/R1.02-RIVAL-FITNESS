@@ -1,0 +1,99 @@
+
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f5873;
+    padding: 15px;
+    color: white;
+}
+nav .menu {
+    display: flex;
+    gap: 20px;
+}
+nav .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav .menu a:hover {
+    text-decoration: underline;
+}
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.inscription-btn {
+    background-color: #4691a4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.inscription-btn:hover {
+    background-color: #3a7f90;
+}
+
+/* Section principale */
+.main-section {
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?gym') no-repeat center/cover;
+    height: 500px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+.main-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.main-content p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+.main-content button {
+    background-color: #4691a4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main-content button:hover {
+    background-color: #3a7f90;
+}
+
+/* Section "Notre Histoire" */
+.notre-histoire {
+    background-color: #ececec;
+    padding: 30px;
+    text-align: center;
+}
+.notre-histoire h2 {
+    font-size: 28px;
+    color: #2f5873;
+}
