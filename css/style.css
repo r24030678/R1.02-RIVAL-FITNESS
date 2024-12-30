@@ -70,9 +70,11 @@ nav .logo {
 }
 
 /* Section principale */
-.main-section {
+.offre-section {
     position: relative;
-    background: url('https://source.unsplash.com/1600x900/?gym') no-repeat center/cover;
+    background-image: url('/media/image/fondOffre.png');
+    background-size: cover;
+    background-position: center;
     height: 500px;
     color: #000;
     text-align: center;
@@ -80,20 +82,20 @@ nav .logo {
     justify-content: center;
     align-items: center;
 }
-.main-content {
+.offre-content {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
-.main-content h1 {
+.offre-content h1 {
     font-size: 30px;
     font-weight: bold;
 }
-.main-content p {
+.offre-content p {
     margin: 15px 0;
     font-size: 18px;
 }
-.main-content button {
+.offre-content button {
     background-color: #4691a4;
     color: white;
     border: none;
@@ -102,7 +104,7 @@ nav .logo {
     font-size: 16px;
     cursor: pointer;
 }
-.main-content button:hover {
+.offre-content button:hover {
     background-color: #3a7f90;
 }
 
