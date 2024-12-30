@@ -70,6 +70,12 @@ nav .logo {
 }
 
 /* Section principale */
+
+main {
+    background-color: #252932;
+    height: 3200px;
+}
+
 .offre-section {
     position: relative;
     background-image: url('/media/image/fondOffre.png');
@@ -79,11 +85,11 @@ nav .logo {
     color: #000;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 200px;
 }
 .offre-content {
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
@@ -109,14 +115,34 @@ nav .logo {
 }
 
 /* Section "Notre Histoire" */
-.notre-histoire {
-    background-color: #ececec;
-    padding: 30px;
-    text-align: center;
+.notre-histoire-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252932;
+    padding: 100px;
 }
-.notre-histoire h2 {
-    font-size: 28px;
-    color: #2f5873;
+.notre-histoire {
+    background-color: #D9D9D9;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 1604px;
+    height: 500px;
 }
 
+.notre-histoire h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2f5873;
+    margin-bottom: 20px;
+}
+
+.notre-histoire p {
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    line-height: 3;
+}
 
