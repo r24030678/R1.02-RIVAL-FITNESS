@@ -10,6 +10,25 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
+header {
+    background-color: #A3AEB6;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+header p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre l'image et le texte */
+}
 /* Barre de navigation */
 nav {
     display: flex;
@@ -97,3 +116,5 @@ nav .logo {
     font-size: 28px;
     color: #2f5873;
 }
+
+
