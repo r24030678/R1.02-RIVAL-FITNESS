@@ -123,14 +123,13 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #252932;
-    padding: 100px;
+    padding-top: 100px;
 }
 .notre-histoire {
     background-color: #D9D9D9;
     padding: 20px 40px;
     border-radius: 15px;
     width: 1604px;
-    height: 500px;
 }
 
 .notre-histoire h2 {
@@ -149,3 +148,44 @@ main {
     line-height: 3;
 }
 
+/* Section "Nos Clubs" */
+.nos-clubs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+}
+.nos-clubs {
+    display: flex;
+    padding-top: 100px;
+    width: 1604px;
+    gap: 20px;
+}
+
+.nos-clubs-section h2 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.nos-clubs p {
+    flex: 1;
+    max-width: 800px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    line-height: 3;
+}
+
+.nos-clubs iframe {
+    flex: 1;
+    max-width: 800px;
+    border: none;
+}
+
+/* Section "vidéo" */
