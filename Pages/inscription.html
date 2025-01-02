@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/style.css">  -->
+    <link rel="stylesheet" href="/css/style.css"> 
     <link rel="stylesheet" href="/css/styleInscription.css">
     <title>Inscription</title>
 </head>
@@ -11,17 +11,18 @@
     <main>
         <div class="form-wrapper">
             <div class="form-header">
-                <img src="/media/image/logo.png" alt="RivalFitness">
+                <img src="/media/image/logo.png" alt="RivalFitness" class="logo">
                 <h1>INSCRIPTION</h1>
+                <img src="/media/image/logo.png" alt="RivalFitness" class="fliped-logo">
             </div>
             <form>
-                <label for="nom">Nom</label>
+                <label for="nom">Nom<span>*</span></label>
                 <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
 
-                <label for="prenom">Prénom</label>
+                <label for="prenom">Prénom<span>*</span></label>
                 <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
 
-                <label for="email">Adresse Mail</label>
+                <label for="email">Adresse Mail<span>*</span></label>
                 <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
 
                 <label for="pays">Pays</label>
@@ -32,7 +33,19 @@
                     <option value="canada">Canada</option>
                 </select>
 
-                <label for="telephone">Téléphone</label>
+                <label>Sexe<span>*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="homme" name="sexe" value="homme" required>
+                    <label for="homme">Homme</label>
+
+                    <input type="radio" id="femme" name="sexe" value="femme" required>
+                    <label for="femme">Femme</label>
+
+                    <input type="radio" id="autre" name="sexe" value="autre" required>
+                    <label for="autre">Autre</label>
+                </div>
+
+                <label for="telephone">Téléphone<span>*</span></label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro" required>
 
                 <button type="submit">Envoyer</button>

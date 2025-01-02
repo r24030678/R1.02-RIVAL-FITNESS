@@ -2,8 +2,7 @@
 main {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #2c2c36; /* Fond sombre */
-    color: #333;
+    background-color: #252932;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,36 +11,41 @@ main {
 
 /* Conteneur principal */
 .form-wrapper {
-    width: 70%;
-    height: 70%;
+    width: 70vh;
+    height: 75vh;
     background-color: #d3d3d3; /* Fond du formulaire */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .form-header {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: 20%;
     justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.fliped-logo {
+    width: 100px;
+}
+
 .logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px;
+    width: 100px;
+    transform: scaleX(-1);
 }
 
 h1 {
-    font-size: 24px;
-    color: #000;
+    color: white;
+    font-size: 40px;
+    text-shadow: 
+        -1px -1px 0 #252932,
+        1px -1px 0 #252932,
+        -1px 1px 0 #252932,
+        1px 1px 0 #252932;
 }
 
 /* Styles du formulaire */
@@ -56,7 +60,9 @@ label {
 }
 
 label span {
-    color: red;
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 input, select {
@@ -67,10 +73,17 @@ input, select {
     font-size: 14px;
 }
 
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
 button {
     background-color: #5a9;
     color: #fff;
     border: none;
+    margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
