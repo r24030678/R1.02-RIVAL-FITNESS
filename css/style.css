@@ -76,7 +76,7 @@ nav .logo img {
 
 main {
     background-color: #252932;
-    height: 3200px;
+    height: 2500px;
 }
 
 .offre-section {
@@ -122,7 +122,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252932;
     padding-top: 100px;
 }
 .notre-histoire {
@@ -189,3 +188,67 @@ main {
 }
 
 /* Section "vidéo" */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.notre-video {
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    padding: 40px;
+    border-radius: 15px;
+    width: 1604px;
+}
+
+/* Section Nos Réseaux */ 
+.nos-reseaux-section {
+    background-color: #727272;
+    height: 50px;
+}
+
+.nos-reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 5px;
+}
+
+.nos-reseaux p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nos-reseaux a img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Pied-de-Page */
+
+.pied-de-page-section {
+    background-color: #A3AEB6;
+    padding: 20px;
+    height: 80px;
+}
+
+.pied-de-page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pied-de-page p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pied-de-page li{
+    font-size: 12px;
+}
