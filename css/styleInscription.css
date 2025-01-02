@@ -1,0 +1,82 @@
+/* Styles généraux */
+main {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c2c36; /* Fond sombre */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+/* Conteneur principal */
+.form-wrapper {
+    width: 70%;
+    height: 70%;
+    background-color: #d3d3d3; /* Fond du formulaire */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header {
+    width: 80%;
+    height: 70%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #000;
+}
+
+/* Styles du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+label span {
+    color: red;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #5a9;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a8;
+}
