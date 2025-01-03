@@ -6,19 +6,61 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #252932;
+}
 /* Section Nos Plats */
 
 .nos-plats-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    
     background-color: #D9D9D9;
+    text-align: center;
+    padding: 20px 0;
+    margin: 5%;
+    height: 70vh;
 }
 
 .nos-plats {
     display: flex;
     justify-content: center;
+    gap: 100px;
+}
 
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1E4B71;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.nos-plats div {
+    background-color: white;
+    width: 454px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.nos-plats img{
+    margin: 20px;
+    width: 409px;
+    height: 250px;  
+}
+
+.plat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.plat p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
 }
