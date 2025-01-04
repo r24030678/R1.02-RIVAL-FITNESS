@@ -35,21 +35,27 @@
             <h2> Nos plats recommandés </h2>
             <div class="nos-plats">
                 <div class="plat">
-                    <img src="/media/image/alimentation/salade.png" class="salade">
+                    <a href="#Salade">
+                        <img src="/media/image/alimentation/salade.png">
+                    </a>
                     <h3> Salade </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                         Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                     </p>
                 </div>
                 <div class="plat">
-                    <img src="/media/image/alimentation/filet-de-poulet.png"  class="poulet-megnouch">
+                    <a href="#Poulet-manouch">
+                        <img src="/media/image/alimentation/filet-de-poulet.png">
+                    </a>
                     <h3> Poulet Manouch </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                         Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                     </p>
                 </div>
                 <div class="plat">
-                    <img src="/media/image/alimentation/pancake.png" class="pancake">
+                    <a href="#Pancake">
+                        <img src="/media/image/alimentation/pancake.png">
+                    </a>
                     <h3> Pancake </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                             Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
@@ -59,12 +65,12 @@
         </section>
         
         <section class="plat-section">
-            <h2>Salade</h2>
-            <div class="salade">
+            <h2 id="Salade">Salade</h2>
+            <div class="plat-unique">
                 <div class="image-container">
-                    <img src="/media/image/alimentation/salade.png" class="salade">
+                    <img src="/media/image/alimentation/salade.png">
                 </div>
-                <div class="salade-content">
+                <div class="plat-unique-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                         Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                     </p>
@@ -73,12 +79,26 @@
         </section>
 
         <section class="plat-section">
-            <h2>Poulet Manouch</h2>
-            <div class="salade">
-                <div class="image-container">
-                    <img src="/media/image/alimentation/filet-de-poulet.png"  class="poulet-megnouch">
+            <h2 id="Poulet-manouch">Poulet Manouch</h2>
+            <div class="plat-unique">
+                <div class="plat-unique-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                        Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                    </p>
                 </div>
-                <div class="salade-content">
+                <div class="image-container">
+                    <img src="/media/image/alimentation/filet-de-poulet.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="plat-section">
+            <h2 id="Pancake">Pancake</h2>
+            <div class="plat-unique">
+                <div class="image-container">
+                    <img src="/media/image/alimentation/pancake.png">
+                </div>
+                <div class="plat-unique-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                         Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                     </p>
@@ -87,5 +107,46 @@
         </section>
     </main>
 
+    <footer>
+        <!-- Section Footer (Nos réseaux et le Pied-de-page)-->
+        <section class="nos-reseaux-section">
+            <div class="nos-reseaux">
+                <p> Nos réseaux : </p>
+                <a href="https://www.instagram.com/RivalFitness/" target="_blank"> 
+                    <img src="/media/image/Instagram.png" style="width:37px; height: 37px;"> 
+                </a>
+                <a href="https://www.youtube.com/RivalFitness/" target="_blank"> 
+                    <img src="/media/image/Youtube.png" style="width:37px; height: 37px;"> 
+                </a>
+                <a href="https://www.x.com/RivalFitness/" target="_blank"> 
+                    <img src="/media/image/Twitter.png" style="width:37px; height: 37px;"> 
+                </a>
+                <a href="https://www.facebook.com/RivalFitness/" target="_blank"> 
+                    <img src="/media/image/Facebook.png" style="width:37px; height: 37px;"> 
+                </a>
+            </div>
+        </section>
+
+        <section class="pied-de-page-section">   
+            <div class="pied-de-page">
+                <p>Salles de Sport</p>
+                <ul>
+                    <li> Lyon </li>
+                    <li> Paris </li>
+                    <li> Marseille </li>
+                </ul><p>Informations</p>
+                <ul>
+                    <li> Horaires </li>
+                    <li> Réglement </li>
+                </ul>
+                <p>Nous contacter</p>
+                <ul>
+                    <li> Coordonnées : Par là</li>
+                    <li> Numéro : 06 07 08 09 10</li>
+                    <li> Mail :  rivalFitness@gmail.com </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

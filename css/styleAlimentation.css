@@ -6,6 +6,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     background-color: #252932;
 }
@@ -77,7 +82,7 @@ h2 {
 }
 
 
-.salade {
+.plat-unique {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +106,7 @@ h2 {
 }
 
 
-.salade-content p {
+.plat-unique-content p {
     font-size: 16px;
     font-weight: bold;
     color: black;
@@ -109,3 +114,6 @@ h2 {
     text-align: center;
 }
 
+#Salade, #Poulet-manouch, #Pancake {
+    scroll-margin-top: 25vh;
+}
