@@ -26,7 +26,6 @@ h2 {
         2px -2px 0 black,
         -2px 2px 0 black,
         2px 2px 0 black;
-    margin: 20px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -36,7 +35,6 @@ h2 {
 .coach-section {
     padding: 20px 0;
     margin: 6%;
-    height: 500px;
 }
 
 
@@ -50,7 +48,7 @@ h2 {
 
 .image-container {
     background-color: white;
-    width: 454px;
+    width: 354px;
     height: auto;
     border-radius: 15px;
 }
@@ -58,8 +56,8 @@ h2 {
 
 .image-container img {
     margin: 20px;
-    width: 393px;
-    height: 421px;  
+    width: 300px;
+    height: auto;  
 }
 
 
