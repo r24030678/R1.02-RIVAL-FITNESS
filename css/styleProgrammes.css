@@ -1,0 +1,77 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #252932;
+}
+
+
+/* Section Nos Plats */
+
+h3 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    margin: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Plat Salade */
+
+.coach-section {
+    padding: 20px 0;
+    margin: 6%;
+    height: 500px;
+}
+
+
+.coach-unique {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 100px;
+}
+
+.image-container {
+    background-color: white;
+    width: 454px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+.image-container img {
+    margin: 20px;
+    width: 393px;
+    height: 421px;  
+}
+
+
+.coach-unique-content p {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    line-height: 1.5;
+    text-align: center;
+}
