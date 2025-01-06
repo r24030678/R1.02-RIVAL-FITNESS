@@ -186,7 +186,8 @@ main {
     color: var(--text-color-1);
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: 300;
     cursor: pointer;
     display: none; /* Initialement masqué */
     z-index: 1000;
