@@ -1,6 +1,6 @@
 .offre-section {
     position: relative;
-    background-image: url('media/image/fondOffre.png');
+    background-image: url("/media/image/fondOffre.png");
     background-size: cover;
     background-position: center;
     height: 500px;
