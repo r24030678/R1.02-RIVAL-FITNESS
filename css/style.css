@@ -17,8 +17,41 @@
     --footer-1-color: #727272;
     --text-color-1: #ffffff;
     --text-color-2: #000000;
+    --submit-btn-color: rgb(85, 170, 153);
+    --submit-btn-hover-color: rgb(68, 170, 136);
+
+    --font-size-large: 40px;
+    --font-size-medium: 15px;
+    --font-size-small: 10px;
+
+    --logo-size-large: 200px;
+    --logo-size-small: 70px;
+
+    --gap-large: 50px;
+    --gap-medium: 20px; 
+    --gap-small: 20px;
+
+    --nav-pad-width: 15px;
+    --nav-pad-heigh: 8px;
 }
 
+@media (max-width: 700px) {
+    :root {
+        --font-size-large: 25px;
+        --font-size-medium: 10px;
+        --font-size-small: 7px;
+
+        --logo-size-large: 100px;
+        --logo-size-small: 40px;
+
+        --gap-large: 50px;
+        --gap-medium: 20px; 
+        --gap-small: 1px;
+
+        --nav-pad-width: 8px;
+        --nav-pad-heigh: 5px;
+    }
+}
 
 /* Thème Hiver (winter) */
 body.winter {
@@ -31,8 +64,9 @@ body.winter {
     --footer-1-color: #727272;
     --text-color-1: #ffffff;
     --text-color-2: #000000;
+    --submit-btn-color: rgb(85, 170, 153);
+    --submit-btn-hover-color: rgb(68, 170, 136);
 }
-
 
 /* Thème Été (summer) */
 body.summer {
@@ -45,13 +79,13 @@ body.summer {
     --footer-1-color: #D68F5A;
     --text-color-1: #ffffff;
     --text-color-2: #000000;
+    --submit-btn-color: rgb(235, 152, 0);
+    --submit-btn-hover-color: rgb(179, 117, 2);
 }
-
 
 body {
     background-color: var(--background-color);
 }
-
 
 /* Header */
 header {
@@ -62,18 +96,16 @@ header {
     position: relative;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
+    font-size: var(--font-size-medium);
     font-weight: bold;
     color: var(--text-color-1);
 }
 
-
 header p {
-    display: flex;
     align-items: center;
-    gap: 10px; /* Espace entre l'image et le texte */
+    display: flex;
+    gap: var(--gap-small); /* Espace entre l'image et le texte */
 }
-
 
 /* Idéalement faudrait virer ces trois selecteur d'id et redimensionner les img */
 #taille-1 {
@@ -81,18 +113,15 @@ header p {
     height:40px;
 }
 
-
 #taille-2 {
     width:40px;
     height:37px;
 }
 
-
 #taille-3 {
     width:32px;
     height:36px;
 }
-
 
 /* Et faudrait mettre un truc comme ca
 header p img {
@@ -100,7 +129,6 @@ header p img {
     height: 40px;
 }
 */
-
 
 .navbar {
     position: sticky;
@@ -116,7 +144,6 @@ header p img {
     transition: top 0.3s ease-in-out;
 }
 
-
 .navbar.sticky {
     position: fixed;
     top: 0;
@@ -124,39 +151,35 @@ header p img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .logo a {
-    font-size: 1.5rem;
+    font-size: var(--font-size-medium);
     font-weight: bold;
     color: var(--text-color-1);
     text-decoration: none;
 }
 
-
 .logo a img {
-    width:70px;
+    width: var(--logo-size-small);
 }
+
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: var(--gap-small);
 }
-
 
 .nav-menu li a {
     text-decoration: none;
     color: var(--text-color-1);
-    font-size: 1rem;
-    padding: 8px 15px;
+    font-size: var(--font-size-medium);
+    padding: var(--nav-pad-heigh) var(--nav-pad-width);
     transition: background-color 0.3s ease;
 }
-
 
 .nav-menu li a:hover {
     background-color: var(--button-color);
     border-radius: 5px;
 }
-
 
 .signup-btn .button {
     text-decoration: none;
@@ -166,7 +189,6 @@ header p img {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 
 .signup-btn .button:hover {
     background-color: var(--button-hover-color);
@@ -193,9 +215,9 @@ main {
     z-index: 1000;
   }
   
-  #scrollToTopBtn:hover {
+#scrollToTopBtn:hover {
     background-color: var(--button-hover-color)
-  }
+}
 
 /* Section Nos Réseaux */
 .nos-reseaux-section {
@@ -205,6 +227,7 @@ main {
 
 .nos-reseaux {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding-left: 250px;
@@ -212,18 +235,15 @@ main {
     padding-top: 5px;
 }
 
-
 .nos-reseaux p{
     color: var(--text-color-1);
     font-size: 20px;
     font-weight: bold;
 }
 
-
 .nos-reseaux a img:hover {
     transform: scale(1.1);
 }
-
 
 /* Section Pied-de-Page */
 .pied-de-page-section {
@@ -234,6 +254,7 @@ main {
 
 .pied-de-page{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
     max-width: 1200px;

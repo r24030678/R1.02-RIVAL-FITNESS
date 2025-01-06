@@ -1,3 +1,30 @@
+:root {
+    --font-size-3: 60px;
+    --font-size-2: 40px;
+    --font-size-1: 20px;
+
+    --btn-theme-size: 120px;
+    --coach-img-size: 400px;
+}
+
+@media (max-width: 700px) {
+    :root {
+        --font-size-3: 35px;
+        --font-size-2: 25px;
+        --font-size-1: 16px;
+        
+        --btn-theme-size: 70px;
+        --coach-img-size: 300px;     
+    }
+    .coach-unique {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100px;
+        height: auto;  
+    }
+}
+
 /* Conteneur des boutons */
 .theme-toggle {
     display: flex;
@@ -16,9 +43,8 @@
     color: white;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: var(--font-size-2);
 }
-
 
 .buttons-wrapper {
     display: flex;
@@ -29,14 +55,13 @@
     width: 100%;
 }
 
-
 /* Boutons individuels */
 .theme-button {
     background-color: white;
     border: none;
     border-radius: 40%;
-    width: 120px;
-    height: 120px;
+    width: var(--btn-theme-size);
+    height: var(--btn-theme-size);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,12 +70,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .theme-button i {
-    font-size: 70px;
+    font-size: var(--font-size-3);
     color: #87CEEB; /* Couleur par défaut de l'icône */
 }
-
 
 /* Effet au survol */
 .theme-button:hover {
@@ -58,61 +81,46 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 /* Couleurs pour Winter */
 #winter-button i {
     color: #1E90FF;
 }
-
 
 /* Couleurs pour Summer */
 #summer-button i {
     color: #FFA500;
 }
 
-
 /* Thème actif (par exemple, Summer) */
 .theme-toggle.summer {
     background-color: #FFD700;
 }
 
-
 .theme-toggle.summer #winter-button i {
     color: #FFD700; /* Couleur atténuée pour le flocon en Summer */
 }
 
-
 .theme-toggle.summer #summer-button i {
     color: #FFA500; /* Soleil en jaune/orange */
 }
-
 
 /* Thème actif (par exemple, Winter) */
 .theme-toggle.winter {
     background-color: #87CEEB;
 }
 
-
 .theme-toggle.winter #winter-button i {
     color: #1E90FF;
 }
-
 
 .theme-toggle.winter #summer-button i {
     color: #87CEEB;
 }
 
-
-
 h2 {
-    font-size: 60px;
+    font-size: var(--font-size-3);
     font-weight: bold;
     color: white;
-    text-shadow: 
-        -2px -2px 0 black,
-        2px -2px 0 black,
-        -2px 2px 0 black,
-        2px 2px 0 black;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -132,26 +140,22 @@ h2 {
 
 .image-container {
     background-color: white;
-    width: 354px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
 }
 
 .image-container img {
-    margin: 20px;
-    width: 300px;
+    margin: 10px;
+    width: var(--coach-img-size);
     height: auto;  
 }
 
 .coach-unique-content p {
-    font-size: 22px;
+    font-size: var(--font-size-1);
     font-weight: bold;
     color: white;
-    text-shadow: 
-        -2px -2px 0 black,
-        2px -2px 0 black,
-        -2px 2px 0 black,
-        2px 2px 0 black;
     line-height: 1.5;
     text-align: center;
 }
