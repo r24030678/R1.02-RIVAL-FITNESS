@@ -1,0 +1,15 @@
+:root{
+    /* Summer */
+    --bordure-summer : #A3AEB6;
+    --textePrincipal-summer : #E6E6E6;
+    --fondInscription-summer: #5D8D9D;
+    --barreNavigation-summer: #1E4B71;
+    --CouleurFondPage-summer: #252932;
+
+    /* Winter */
+    --bordure-winter: #FFD7A6;
+    --textePrincipal-winter: #F5D0A9;
+    --fondInscription-winter: #F1A7A3;
+    --barreNavigation-winter: #F28563;
+    --CouleurFondPage-winter: #E0CDA9;
+}
