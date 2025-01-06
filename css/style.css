@@ -6,19 +6,67 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Définition des variables de couleurs globales */
+:root {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+/* Thème Hiver (winter) */
+body.winter {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+/* Thème Été (summer) */
+body.summer {
+    --background-color: #E0CDA9;
+    --header-footer-color: #FFB88C;
+    --nav-color: #F28563;
+    --button-color: #F1A7A3;
+    --button-hover-color: #b17572;
+    --component-color: #FFE6D2;
+    --footer-1-color: #D68F5A;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+
 /* Header */
 header {
-    background-color: #A3AEB6;
+    background-color: var(--header-footer-color);
     height: 40px;
     display: flex;
     flex-direction: row;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    color: white;
-
+    color: var(--text-color-1);
 }
+
 
 header p {
     display: flex;
@@ -26,224 +74,108 @@ header p {
     gap: 10px; /* Espace entre l'image et le texte */
 }
 
-/* Barre de navigation */
-nav {
+
+/* Idéalement faudrait virer ces trois selecteur d'id et redimensionner les img */
+#taille-1 {
+    width:52px;
+    height:40px;
+}
+
+
+#taille-2 {
+    width:40px;
+    height:37px;
+}
+
+
+#taille-3 {
+    width:32px;
+    height:36px;
+}
+
+
+/* Et faudrait mettre un truc comme ca
+header p img {
+    width: 40px;
+    height: 40px;
+}
+*/
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #2f5873;
-    padding: 15px;
-    color: white;
-    position: relative;
-}
-nav .menu {
-    display: flex;
-    gap: 260px;
-}
-nav .menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-nav .menu a:hover {
-    text-decoration: underline;
-}
-nav .logo img {
-    position: absolute;
-    bottom: -5px;
-    left: 60px;
-}
-.inscription-btn {
-    background-color: #4691a4;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-}
-.inscription-btn:hover {
-    background-color: #3a7f90;
-}
-
-/* Section principale */
-
-main {
-    background-color: #252932;
-}
-
-.offre-section {
-    position: relative;
-    background-image: url('/media/image/fondOffre.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    color: #000;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 200px;
-}
-.offre-content {
-    padding: 20px;
-    border-radius: 10px;
-}
-.offre-content h1 {
-    font-size: 30px;
-    font-weight: bold;
-}
-.offre-content p {
-    margin: 15px 0;
-    font-size: 18px;
-}
-.offre-content button {
-    background-color: #4691a4;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.offre-content button:hover {
-    background-color: #3a7f90;
+    z-index: 1;
+    transition: top 0.3s ease-in-out;
 }
 
-/* Section "Notre Histoire" */
-.notre-histoire-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
-.notre-histoire {
-    background-color: #D9D9D9;
-    padding: 20px 40px;
-    border-radius: 15px;
-    width: 1604px;
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.notre-histoire h2 {
-    text-align: center;
-    font-size: 50px;
+
+.logo a {
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #2f5873;
-    margin-bottom: 20px;
+    color: var(--text-color-1);
+    text-decoration: none;
 }
 
-.notre-histoire p {
-    padding: 30px;
-    text-align: left;
-    font-size: 16px;
-    color: black;
-    line-height: 3;
-}
 
-/* Section "Nos Clubs" */
-.nos-clubs-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    position: relative;
+.logo a img {
+    width:70px;
 }
-.nos-clubs {
+.nav-menu {
+    list-style: none;
     display: flex;
-    padding-top: 100px;
-    width: 1604px;
     gap: 20px;
 }
 
-.nos-clubs-section h2 {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    padding-top: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
 }
 
-.nos-clubs p {
-    flex: 1;
-    max-width: 800px;
-    text-align: left;
-    font-size: 16px;
-    color: white;
-    line-height: 3;
+
+.nav-menu li a:hover {
+    background-color: var(--button-color);
+    border-radius: 5px;
 }
 
-.nos-clubs iframe {
-    flex: 1;
-    max-width: 800px;
-    border: none;
+
+.signup-btn .button {
+    text-decoration: none;
+    color: var(--text-color-1);
+    background-color: var(--button-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Section "vidéo" */
-.video-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-}
-.notre-video {
-    display: flex;
-    justify-content: center;
-    background-color: #D9D9D9;
-    padding: 40px;
-    border-radius: 15px;
-    width: 1604px;
+
+.signup-btn .button:hover {
+    background-color: var(--button-hover-color);
 }
 
-/* Section Nos Réseaux */ 
-.nos-reseaux-section {
-    background-color: #727272;
-    height: 50px;
-}
 
-.nos-reseaux {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 5px;
-}
 
-.nos-reseaux p{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.nos-reseaux a img:hover {
-    transform: scale(1.1);
-}
-
-/* Section Pied-de-Page */
-
-.pied-de-page-section {
-    background-color: #A3AEB6;
-    padding: 20px;
-    height: 80px;
-}
-
-.pied-de-page{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.pied-de-page p {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.pied-de-page li{
-    font-size: 12px;
+/* Section principale */
+main {
+    background-color: var(--background-color);
 }

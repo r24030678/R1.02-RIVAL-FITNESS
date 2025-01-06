@@ -1,40 +1,81 @@
-body {
-    background-color: #252932;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/* Définition des variables de couleurs globales */
+:root {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+/* Thème Hiver (winter) */
+body.winter {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+/* Thème Été (summer) */
+body.summer {
+    --background-color: #E0CDA9;
+    --header-footer-color: #FFB88C;
+    --nav-color: #F28563;
+    --button-color: #F1A7A3;
+    --button-hover-color: #b17572;
+    --component-color: #FFE6D2;
+    --footer-1-color: #D68F5A;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.Erreur404-section { 
-    width: 70%;
-    height: 60%;
+
+.Erreur404-section {
+    margin-top: 50px;
+    width: 70vh;
+    height: 60vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #A3AEB6;
+    background-color: var(--component-color);
 }
+
 
 .Erreur404-section h1 {
     color: white;
     font-size: 70px;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
         1px 1px 0 black;
 }
 
+
 .Erreur404-section p {
     padding-top: 10px;
     color: white;
     font-size: 30px;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,

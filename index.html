@@ -5,45 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megnouch Fitness</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleAcceuil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Barre Header -->
     <header>
-        <p><img src="/media/image/header/haltere.png" width="52" height="40"> Meilleurs Equipements</p>
-        <p><img src="/media/image/header/hommeMuscu.png" width="40" height="37"> +500 CLUBS</p>
-        <p><img src="/media/image/header/applicationMobile.png" width="32" height="36"> Application Mobile</p>
+        <p><img src="/media/image/header/haltere.png" id="taille-1"> Meilleurs Equipements</p>
+        <p><img src="/media/image/header/hommeMuscu.png" id="taille-2"> +500 CLUBS</p>
+        <p><img src="/media/image/header/applicationMobile.png" id="taille-3"> Application Mobile</p>
     </header>
 
+
     <!-- Barre de navigation -->
-    <nav>
+    <nav class="navbar">
+        <!-- Logo -->
         <div class="logo">
-            <a href="/index.html"> 
-                <img src="/media/image/logo.png"  alt="Description de l'image" style="width:70px;"> 
-            </a>
+            <a href="index.html"><img src="/media/image/logo.png"  alt="Description de l'image"></a>
         </div>
-        <div class="menu">
-            <a href="/Pages/erreur404.html">Nos Offres</a>
-            <a href="/Pages/alimentation.html">Alimentation</a>
-            <a href="/Pages/programmes.html">Programmes</a>
+
+
+        <!-- Menu Items -->
+        <ul class="nav-menu">
+            <li><a href="/Pages/erreur404.html">Nos Offres</a></li>
+            <li><a href="/Pages/alimentation.html">Alimentation</a></li>
+            <li><a href="/Pages/programmes.html">Programmes</a></li>
+        </ul>
+
+
+        <!-- Sign-up Button -->
+        <div class="signup-btn">
+            <a href="/Pages/inscription.html" class="button">Inscription</a>
         </div>
-        <a href="/Pages/inscription.html" class="inscription-btn">Inscription</a>
     </nav>
 
-    <audio controls>
+
+    <audio autoplay hidden>
         <source src="media/audio/audio_accueil.mp3" type="audio/mpeg">
-        Votre navigateur ne supporte pas l'élément audio.
     </audio>
+
 
     <!-- Section principale -->
     <main>
         <div class="offre-section">
             <div class="offre-content">
                 <h1>OFFRE DE DINGUE OMG ! -99%</h1>
-                <p>Une machine offerte à l’achat d’un abonnement à vie !</p>
-                <button>Inscris-toi dès maintenant</button>
+                <p>Une machine offerte à l'achat d'un abonnement à vie !</p>
+                <a href="Pages/erreur404.html" class="button">Découvres nos offres !</a>
+
+
             </div>
         </div>
-        
+       
         <!-- Section Notre Histoire -->
         <section class="notre-histoire-section">
             <div class="notre-histoire">
@@ -51,17 +64,17 @@
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                 Duis feugiat eros vel turpis gravida, non facilisis mi interdum. <br>
-                fsdfosdfpf fdsofkjspodfkjspfd fpdsojfpsd pfsodjsdfo pojfdspsod psfodjsdfoj <br> 
+                fsdfosdfpf fdsofkjspodfkjspfd fpdsojfpsd pfsodjsdfo pojfdspsod psfodjsdfoj <br>
                 fsdfopjsdfopjsf sdfposdfijk dsfopjksdfpo pdfsojsfod psfodj sdfj po
                 </p>
             </div>
         </section>
-        
+       
         <!-- Section Nos Clubs -->
         <section class="nos-clubs-section">
             <h2> Nos clubs </h2>
             <div class="nos-clubs">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10761.373309931067!2d3.5230118146209772!3d47.6000134561209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee30fdb05d98e1%3A0x2609ce35b1c9e342!2sAnus%2C%2089560%20Fouronnes!5e0!3m2!1sfr!2sfr!4v1735646212694!5m2!1sfr!2sfr" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10761.373309931067!2d3.5230118146209772!3d47.6000134561209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee30fdb05d98e1%3A0x2609ce35b1c9e342!2sAnus%2C%2089560%20Fouronnes!5e0!3m2!1sfr!2sfr!4v1735646212694!5m2!1sfr!2sfr"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
@@ -70,6 +83,7 @@
                     Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
                     Duis feugiat eros vel turpis gravida, non facilisis mi interdum.</p>
         </section>
+
 
         <!-- Section pour la vidéo -->
         <section class="video-section">
@@ -82,37 +96,38 @@
     </main>
 
 
+
+
     <footer>
-        <!-- Section Footer (Nos réseaux et le Pied-de-page)-->
+        <!-- Section Footer (Nos réseaux et le truc en dessous)-->
         <section class="nos-reseaux-section">
             <div class="nos-reseaux">
                 <p> Nos réseaux : </p>
-                <a href="https://www.instagram.com/RivalFitness/" target="_blank"> 
-                    <img src="/media/image/Instagram.png" style="width:37px; height: 37px;"> 
+                <a href="https://www.instagram.com/RivalFitness/" target="_blank">
+                    <img src="/media/image/Instagram.png" style="width:37px; height: 37px;">
                 </a>
-                <a href="https://www.youtube.com/RivalFitness/" target="_blank"> 
-                    <img src="/media/image/Youtube.png" style="width:37px; height: 37px;"> 
+                <a href="https://www.youtube.com/RivalFitness/" target="_blank">
+                    <img src="/media/image/Youtube.png" style="width:37px; height: 37px;">
                 </a>
-                <a href="https://www.x.com/RivalFitness/" target="_blank"> 
-                    <img src="/media/image/Twitter.png" style="width:37px; height: 37px;"> 
+                <a href="https://www.x.com/RivalFitness/" target="_blank">
+                    <img src="/media/image/Twitter.png" style="width:37px; height: 37px;">
                 </a>
-                <a href="https://www.facebook.com/RivalFitness/" target="_blank"> 
-                    <img src="/media/image/Facebook.png" style="width:37px; height: 37px;"> 
+                <a href="https://www.facebook.com/RivalFitness/" target="_blank">
+                    <img src="/media/image/Facebook.png" style="width:37px; height: 37px;">
                 </a>
             </div>
         </section>
-
-        <section class="pied-de-page-section">   
+        <section class="pied-de-page-section">  
             <div class="pied-de-page">
                 <p>Salles de Sport</p>
                 <ul>
-                    <li> Lyon </li>
-                    <li> Paris </li>
-                    <li> Marseille </li>
+                    <li><a href="Pages/erreur404.html">Lyon</a></li>
+                    <li><a href="Pages/erreur404.html">Marseille</a></li>
+                    <li><a href="Pages/erreur404.html">Paris</a></li>
                 </ul><p>Informations</p>
                 <ul>
-                    <li> Horaires </li>
-                    <li> Réglement </li>
+                    <li><a href="Pages/erreur404.html">Horaires</a></li>
+                    <li><a href="Pages/erreur404.html">Réglement</a></li>
                 </ul>
                 <p>Nous contacter</p>
                 <ul>
@@ -123,5 +138,6 @@
             </div>
         </section>
     </footer>
+    <script src="js/theme-loader.js"></script>
 </body>
 </html>

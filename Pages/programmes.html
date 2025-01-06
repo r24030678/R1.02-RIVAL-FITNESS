@@ -6,80 +6,90 @@
     <title>Programmes</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleProgrammes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Barre Header -->
     <header>
-        <p><img src="/media/image/header/haltere.png" width="52" height="40"> Meilleurs Equipements</p>
-        <p><img src="/media/image/header/hommeMuscu.png" width="40" height="37"> +500 CLUBS</p>
-        <p><img src="/media/image/header/applicationMobile.png" width="32" height="36"> Application Mobile</p>
+        <p><img src="/media/image/header/haltere.png" id="taille-1"> Meilleurs Equipements</p>
+        <p><img src="/media/image/header/hommeMuscu.png" id="taille-2"> +500 CLUBS</p>
+        <p><img src="/media/image/header/applicationMobile.png" id="taille-3"> Application Mobile</p>
     </header>
 
     <!-- Barre de navigation -->
-    <nav>
+    <nav class="navbar">
+        <!-- Logo -->
         <div class="logo">
-            <a href="/index.html"> 
-                <img src="/media/image/logo.png"  alt="Description de l'image" style="width:70px;"> 
-            </a>
+            <a href="../index.html"><img src="/media/image/logo.png"  alt="Description de l'image"></a>
         </div>
-        <div class="menu">
-            <a href="/Pages/erreur404.html">Nos Offres</a>
-            <a href="/Pages/alimentation.html">Alimentation</a>
-            <a href="/Pages/programmes.html">Programmes</a>
+
+        <!-- Menu Items -->
+        <ul class="nav-menu">
+            <li><a href="/Pages/erreur404.html">Nos Offres</a></li>
+            <li><a href="/Pages/alimentation.html">Alimentation</a></li>
+            <li><a href="/Pages/programmes.html">Programmes</a></li>
+        </ul>
+
+        <!-- Sign-up Button -->
+        <div class="signup-btn">
+            <a href="/Pages/inscription.html" class="button">Inscription</a>
         </div>
-        <a href="/Pages/inscription.html" class="inscription-btn">Inscription</a>
     </nav>
-    
-    <main>
-        <!-- <section class="changez-d'arc">
-            <h2> Changez d'Arc </h2>
-            <div class="boutton-conteneur">
 
-            </div>
-        </section> -->
-        
-        <!-- Photos Coachs -->
-        <section class="coach-section">
-            <div class="coach-unique">
-                <div class="image-container">
-                    <img src="/media/image/programmes/winter-riad.png">
-                </div>
-                <div class="coach-unique-content">
-                    <h2> Riad </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                        Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <div class="theme-toggle">
+        <h1>CHOISSISEZ VOTRE ARC EN COURS</h1>
+        <div class="buttons-wrapper">
+            <button id="winter-button" class="theme-button">
+                <i class="fas fa-snowflake"></i>
+            </button>
+            <button id="summer-button" class="theme-button">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>  
 
-        <section class="coach-section">
-            <div class="coach-unique">
-                <div class="image-container">
-                    <img src="/media/image/programmes/winter-ilian.jpg">
-                </div>
-                <div class="coach-unique-content">
-                    <h2> Ilian </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                        Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                    </p>
-                </div>
+    <section class="coach-section">
+        <div class="coach-unique">
+            <div class="image-container">
+                <img src="/media/image/programmes/winter-riad.png">
             </div>
-        </section>
+            <div class="coach-unique-content">
+                <h2> Riad </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                    Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <section class="coach-section">
-            <div class="coach-unique">
-                <div class="image-container">
-                    <img src="/media/image/programmes/winter-vassili.png">
-                </div>
-                <div class="coach-unique-content">
-                    <h2> Vassili </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                        Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
-                    </p>
-                </div>
+    <section class="coach-section">
+        <div class="coach-unique">
+            <div class="image-container">
+                <img src="/media/image/programmes/winter-ilian.jpg">
             </div>
-        </section>
-    </main>
+            <div class="coach-unique-content">
+                <h2> Ilian </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                    Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="coach-section">
+        <div class="coach-unique">
+            <div class="image-container">
+                <img src="/media/image/programmes/winter-vassili.png">
+            </div>
+            <div class="coach-unique-content">
+                <h2> Vassili </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                    Duis feugiat eros vel turpis gravida, non facilisis mi interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod urna non sem sollicitudin aliquet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/theme-updater.js"></script>
 </body>
 </html>

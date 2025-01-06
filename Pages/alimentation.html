@@ -10,24 +10,31 @@
 <body>
     <!-- Barre Header -->
     <header>
-        <p><img src="/media/image/header/haltere.png" width="52" height="40"> Meilleurs Equipements</p>
-        <p><img src="/media/image/header/hommeMuscu.png" width="40" height="37"> +500 CLUBS</p>
-        <p><img src="/media/image/header/applicationMobile.png" width="32" height="36"> Application Mobile</p>
+        <p><img src="/media/image/header/haltere.png" id="taille-1"> Meilleurs Equipements</p>
+        <p><img src="/media/image/header/hommeMuscu.png" id="taille-2"> +500 CLUBS</p>
+        <p><img src="/media/image/header/applicationMobile.png" id="taille-3"> Application Mobile</p>
     </header>
 
     <!-- Barre de navigation -->
-    <nav>
+    <nav class="navbar">
+        <!-- Logo -->
         <div class="logo">
-            <a href="/index.html"> 
-                <img src="/media/image/logo.png"  alt="Description de l'image" style="width:70px;"> 
-            </a>
+            <a href="../index.html"><img src="/media/image/logo.png"  alt="Description de l'image"></a>
         </div>
-        <div class="menu">
-            <a href="/Pages/erreur404.html">Nos Offres</a>
-            <a href="/Pages/alimentation.html">Alimentation</a>
-            <a href="/Pages/programmes.html">Programmes</a>
+
+
+        <!-- Menu Items -->
+        <ul class="nav-menu">
+            <li><a href="/Pages/erreur404.html">Nos Offres</a></li>
+            <li><a href="/Pages/alimentation.html">Alimentation</a></li>
+            <li><a href="/Pages/programmes.html">Programmes</a></li>
+        </ul>
+
+
+        <!-- Sign-up Button -->
+        <div class="signup-btn">
+            <a href="/Pages/inscription.html" class="button">Inscription</a>
         </div>
-        <a href="/Pages/inscription.html" class="inscription-btn">Inscription</a>
     </nav>
 
     <main>
@@ -148,5 +155,6 @@
             </div>
         </section>
     </footer>
+    <script src="../js/theme-loader.js"></script>
 </body>
 </html>

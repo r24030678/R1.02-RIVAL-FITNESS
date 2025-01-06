@@ -1,23 +1,65 @@
-/* Styles généraux */
-main {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #252932;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+/* Définition des variables de couleurs globales */
+:root {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --submit-btn-color: rgb(85, 170, 153);
+    --submit-btn-hover-color: rgb(68, 170, 136);
+}
+
+
+body.winter {
+    --background-color: #252932;
+    --header-footer-color: #A3AEB6;
+    --nav-color: #2f5873;
+    --button-color: #4691a4;
+    --button-hover-color: #3a7f90;
+    --component-color: #D9D9D9;
+    --footer-1-color: #727272;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --submit-btn-color: rgb(85, 170, 153);
+    --submit-btn-hover-color: rgb(68, 170, 136);
+}
+
+
+body.summer {
+    --background-color: #E0CDA9;
+    --header-footer-color: #FFB88C;
+    --nav-color: #F28563;
+    --button-color: #F1A7A3;
+    --button-hover-color: #b17572;
+    --component-color: #FFE6D2;
+    --footer-1-color: #D68F5A;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --submit-btn-color: rgb(235, 152, 0);
+    --submit-btn-hover-color: rgb(179, 117, 2);
+}
+
 
 /* Conteneur principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .form-wrapper {
+    margin-top: 50px;
     width: 70vh;
     height: 75vh;
-    background-color: #d3d3d3; /* Fond du formulaire */
+    background-color: var(--component-color); /* Fond du formulaire */
     border-radius: 10px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
+
 
 .form-header {
     width: 100%;
@@ -29,24 +71,28 @@ main {
     align-items: center;
 }
 
-.fliped-logo {
+
+.logo-right {
     width: 100px;
 }
 
-.logo {
+
+.logo-left {
     width: 100px;
     transform: scaleX(-1);
 }
 
+
 h1 {
     color: white;
     font-size: 40px;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 #252932,
         1px -1px 0 #252932,
         -1px 1px 0 #252932,
         1px 1px 0 #252932;
 }
+
 
 /* Styles du formulaire */
 form {
@@ -54,16 +100,19 @@ form {
     flex-direction: column;
 }
 
+
 label {
     font-size: 14px;
     margin-bottom: 5px;
 }
+
 
 label span {
     color: rgb(255, 115, 0);
     font-weight: bold;
     font-size: 20px;
 }
+
 
 input, select {
     padding: 10px;
@@ -73,15 +122,17 @@ input, select {
     font-size: 14px;
 }
 
+
 .radio-group {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
 }
 
+
 button {
-    background-color: #5a9;
-    color: #fff;
+    background-color: var(--submit-btn-color);
+    color: var(--text-color-1);
     border: none;
     margin-top: 5px;
     padding: 10px;
@@ -90,6 +141,7 @@ button {
     cursor: pointer;
 }
 
+
 button:hover {
-    background-color: #4a8;
+    background-color: var(--submit-btn-hover-color);
 }

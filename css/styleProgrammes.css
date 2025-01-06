@@ -1,21 +1,108 @@
-/* Style général */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+/* Conteneur des boutons */
+.theme-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #87CEEB; /* Bleu pour le thème Winter (ajuste en fonction du thème) */
+    border-radius: 30px;
+    padding: 10px;
+    width: 60%;
+    margin: 50px auto 0 auto;
+    transition: background-color 0.3s ease;
 }
 
-body{
-    background-color: #252932;
+.theme-toggle h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
 }
 
 
-/* Section Nos Plats */
-
-h3 {
-    font-size: 22px;
+.buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
 }
+
+
+/* Boutons individuels */
+.theme-button {
+    background-color: white;
+    border: none;
+    border-radius: 40%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.theme-button i {
+    font-size: 70px;
+    color: #87CEEB; /* Couleur par défaut de l'icône */
+}
+
+
+/* Effet au survol */
+.theme-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Couleurs pour Winter */
+#winter-button i {
+    color: #1E90FF;
+}
+
+
+/* Couleurs pour Summer */
+#summer-button i {
+    color: #FFA500;
+}
+
+
+/* Thème actif (par exemple, Summer) */
+.theme-toggle.summer {
+    background-color: #FFD700;
+}
+
+
+.theme-toggle.summer #winter-button i {
+    color: #FFD700; /* Couleur atténuée pour le flocon en Summer */
+}
+
+
+.theme-toggle.summer #summer-button i {
+    color: #FFA500; /* Soleil en jaune/orange */
+}
+
+
+/* Thème actif (par exemple, Winter) */
+.theme-toggle.winter {
+    background-color: #87CEEB;
+}
+
+
+.theme-toggle.winter #winter-button i {
+    color: #1E90FF;
+}
+
+
+.theme-toggle.winter #summer-button i {
+    color: #87CEEB;
+}
+
+
 
 h2 {
     font-size: 60px;
@@ -30,13 +117,10 @@ h2 {
     text-align: center;
 }
 
-/* Plat Salade */
-
 .coach-section {
     padding: 20px 0;
     margin: 6%;
 }
-
 
 .coach-unique {
     display: flex;
@@ -53,13 +137,11 @@ h2 {
     border-radius: 15px;
 }
 
-
 .image-container img {
     margin: 20px;
     width: 300px;
     height: auto;  
 }
-
 
 .coach-unique-content p {
     font-size: 22px;

@@ -1,0 +1,202 @@
+.offre-section {
+    position: relative;
+    background-image: url('/media/image/fondOffre.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: var(--text-color-2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offre-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.offre-content p {
+    margin: 20px;
+    font-size: 18px;
+}
+.offre-content a {
+    background-color: var(--button-color);
+    color: var(--text-color-1);
+    border: none;
+    padding: 10px 20px;
+    margin: 10;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.offre-content a:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+/* Section "Notre Histoire" */
+.notre-histoire-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.notre-histoire {
+    background-color: var(--component-color);
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 1604px;
+}
+
+
+.notre-histoire h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--nav-color);
+    margin-bottom: 20px;
+}
+
+
+.notre-histoire p {
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    color: var(--text-color-2);
+    line-height: 3;
+}
+
+
+/* Section "Nos Clubs" */
+.nos-clubs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+}
+.nos-clubs {
+    display: flex;
+    padding-top: 100px;
+    width: 1604px;
+    gap: 20px;
+}
+
+
+.nos-clubs-section h2 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--text-color-1);
+}
+
+
+.nos-clubs p {
+    flex: 1;
+    max-width: 800px;
+    text-align: left;
+    font-size: 16px;
+    color: var(--text-color-1);
+    line-height: 3;
+}
+
+
+.nos-clubs iframe {
+    flex: 1;
+    max-width: 800px;
+    border: none;
+}
+
+
+/* Section "vidéo" */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.notre-video {
+    display: flex;
+    justify-content: center;
+    background-color: var(--component-color);
+    padding: 40px;
+    border-radius: 15px;
+    width: 1604px;
+}
+
+
+/* Section Nos Réseaux */
+.nos-reseaux-section {
+    background-color: var(--footer-1-color);
+    height: 50px;
+}
+
+
+.nos-reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 5px;
+}
+
+
+.nos-reseaux p{
+    color: var(--text-color-1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.nos-reseaux a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Section Pied-de-Page */
+
+
+.pied-de-page-section {
+    background-color: var(--header-footer-color);
+    padding: 20px;
+    height: 80px;
+}
+
+
+.pied-de-page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pied-de-page p {
+    color: var(--text-color-1);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.pied-de-page ul {
+    list-style-type: none;
+}
+
+
+.pied-de-page li{
+    font-size: 12px;
+    color: var(--text-color-1);
+}
+
+
+.pied-de-page ul li a {
+    text-decoration: none;  
+}
+
+
+.pied-de-page ul li a:visited {
+    color: var(--text-color-1);
+}
