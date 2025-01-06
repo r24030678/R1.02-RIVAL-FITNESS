@@ -4,7 +4,6 @@ main {
     align-items: center;
 }
 
-
 .Erreur404-section {
     margin-top: 50px;
     width: 70vh;
@@ -17,7 +16,6 @@ main {
     background-color: var(--component-color);
 }
 
-
 .Erreur404-section h1 {
     color: white;
     font-size: 70px;
@@ -27,7 +25,6 @@ main {
         -1px 1px 0 black,
         1px 1px 0 black;
 }
-
 
 .Erreur404-section p {
     padding-top: 10px;

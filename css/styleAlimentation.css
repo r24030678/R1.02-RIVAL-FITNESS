@@ -1,31 +1,25 @@
 @media (max-width: 700px) {
-    :root {
-      --font-size-large: 40px;
-      --font-size-medium: 14px;
-      --font-size-small: 12px;
-    }
-
-    .plat-unique {
+   .plat-unique {
         flex-direction: column;
     }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-color-2);
+    margin: 10px;
+    text-align: center;
 }
 
 h3 {
     font-size: 22px;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #1E4B71;
-    margin: 10px;
-    text-align: center;
-}
-
 .nos-plats-section {
     background-color: var(--component-color);
-    padding: 2vh 0;
-    margin: 6%;
+    padding: 10px;
+    margin: var(--gap-large);
     height: auto;
 }
 
@@ -37,17 +31,19 @@ h2 {
 }
 
 .nos-plats div {
-    background-color: white;
-    width: 454px;
+    background-color: var(--text-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
     height: 300px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .nos-plats img{
-    margin: 22px;
-    width: 409px;
-    height: 250px;  
-    border-radius: 10px;
+    width: 96%;
+    height: 95%;  
+    border-radius: 15px;
 }
 
 .plat {
@@ -60,7 +56,7 @@ h2 {
 .plat p {
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: var(--text-color-1);
     line-height: 1.5;
     text-align: center;
 }
@@ -70,32 +66,30 @@ h2 {
 .plat-section {
     background-color: var(--component-color);
     padding: 20px 0;
-    margin: 6%;
-    height: 40vh;
+    margin: var(--gap-large);
+    height: auto;
 }
-
 
 .plat-unique {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
-
+    justify-content: center;
 }
 
 .image-container {
-    background-color: white;
-    width: 454px;
+    background-color: var(--text-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
     height: 300px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 
 .image-container img {
-    margin: 20px;
-    width: 409px;
-    height: 250px;  
+    width: 96%;
+    height: 95%;  
     border-radius: 15px;
 }
 

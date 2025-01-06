@@ -21,13 +21,13 @@
     --submit-btn-hover-color: rgb(68, 170, 136);
 
     --font-size-large: 40px;
-    --font-size-medium: 15px;
-    --font-size-small: 10px;
+    --font-size-medium: 14px;
+    --font-size-small: 12px;
 
     --logo-size-large: 200px;
     --logo-size-small: 70px;
 
-    --gap-large: 50px;
+    --gap-large: 80px;
     --gap-medium: 20px; 
     --gap-small: 20px;
 
@@ -44,7 +44,7 @@
         --logo-size-large: 100px;
         --logo-size-small: 40px;
 
-        --gap-large: 50px;
+        --gap-large: 25px;
         --gap-medium: 20px; 
         --gap-small: 1px;
 
