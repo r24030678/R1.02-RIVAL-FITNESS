@@ -177,12 +177,30 @@ main {
     background-color: var(--background-color);
 }
 
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--button-color);
+    color: var(--text-color-1);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Initialement masqué */
+    z-index: 1000;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: var(--button-hover-color)
+  }
+
 /* Section Nos Réseaux */
 .nos-reseaux-section {
     background-color: var(--footer-1-color);
     height: 50px;
 }
-
 
 .nos-reseaux {
     display: flex;
