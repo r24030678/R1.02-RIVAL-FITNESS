@@ -54,14 +54,15 @@ h2 {
 
 .nos-plats-section {
     background-color: var(--component-color);
-    padding: 20px 0;
+    padding: 70px 0;
     margin: 6%;
-    height: 72vh;
+    height: auto;
 }
 
 .nos-plats {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
