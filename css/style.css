@@ -172,10 +172,74 @@ header p img {
     background-color: var(--button-hover-color);
 }
 
-
-
-
 /* Section principale */
 main {
     background-color: var(--background-color);
+}
+
+/* Section Nos Réseaux */
+.nos-reseaux-section {
+    background-color: var(--footer-1-color);
+    height: 50px;
+}
+
+
+.nos-reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 5px;
+}
+
+
+.nos-reseaux p{
+    color: var(--text-color-1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.nos-reseaux a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Section Pied-de-Page */
+.pied-de-page-section {
+    background-color: var(--header-footer-color);
+    padding: 20px;
+    height: 80px;
+}
+
+.pied-de-page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pied-de-page p {
+    color: var(--text-color-1);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pied-de-page ul {
+    list-style-type: none;
+}
+
+.pied-de-page li{
+    font-size: 12px;
+    color: var(--text-color-1);
+}
+
+.pied-de-page ul li a {
+    text-decoration: none;  
+}
+
+.pied-de-page ul li a:visited {
+    color: var(--text-color-1);
 }
