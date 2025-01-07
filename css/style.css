@@ -139,7 +139,7 @@ header p img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: var(--gap-small) var(--gap-medium);
     z-index: 1;
     transition: top 0.3s ease-in-out;
 }
@@ -172,7 +172,7 @@ header p img {
     text-decoration: none;
     color: var(--text-color-1);
     font-size: var(--font-size-medium);
-    padding: var(--nav-pad-heigh) var(--nav-pad-width);
+    padding: var(--nav-pad-heigh) var(--gap-small);
     transition: background-color 0.3s ease;
 }
 
@@ -184,8 +184,9 @@ header p img {
 .signup-btn .button {
     text-decoration: none;
     color: var(--text-color-1);
+    font-size: var(--font-size-medium);
     background-color: var(--button-color);
-    padding: 8px 20px;
+    padding: 8px var(--gap-medium);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
