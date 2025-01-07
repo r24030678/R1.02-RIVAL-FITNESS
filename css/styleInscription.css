@@ -1,4 +1,3 @@
-/* Conteneur principal */
 main {
     display: flex;
     align-items: center;
@@ -6,18 +5,20 @@ main {
 }
 
 .form-wrapper {
-    margin-top: 50px;
-    width: 70vh;
-    height: 75vh;
+    margin: var(--gap-large);
+    padding: var(--gap-medium);
+    width: 100%;
+    height: auto;
     background-color: var(--component-color); /* Fond du formulaire */
     border-radius: 10px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
-    padding: 20px;
 }
 
 .form-header {
     width: 100%;
-    height: 20%;
+    margin-top: var(--gap-small);
+    margin-bottom: var(--gap-medium);
+    height: auto;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -25,18 +26,18 @@ main {
     align-items: center;
 }
 
-.logo-right {
-    width: 100px;
+.form-header .logo-right {
+    width: var(--logo-size-small);
 }
 
-.logo-left {
-    width: 100px;
+.form-header .logo-left {
+    width: var(--logo-size-small);
     transform: scaleX(-1);
 }
 
-h1 {
-    color: white;
-    font-size: 40px;
+.form-header h1 {
+    color: var(--text-color-1);
+    font-size: var(--font-size-large);
     text-shadow:
         -1px -1px 0 #252932,
         1px -1px 0 #252932,
@@ -44,7 +45,6 @@ h1 {
         1px 1px 0 #252932;
 }
 
-/* Styles du formulaire */
 form {
     display: flex;
     flex-direction: column;
