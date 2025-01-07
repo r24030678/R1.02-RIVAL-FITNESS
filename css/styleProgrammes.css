@@ -2,31 +2,49 @@
     --font-size-3: 60px;
     --font-size-2: 40px;
     --font-size-1: 20px;
-
+ 
+ 
     --btn-theme-size: 120px;
     --coach-img-size: 400px;
-}
-
-@media (max-width: 700px) {
+ }
+ 
+ 
+ @media (max-width: 700px) {
     :root {
         --font-size-3: 35px;
         --font-size-2: 25px;
         --font-size-1: 16px;
-        
+       
         --btn-theme-size: 70px;
-        --coach-img-size: 300px;     
+        --coach-img-size: 300px;    
     }
     .coach-unique {
         flex-direction: column;
     }
     .image-container img {
         width: 100px;
-        height: auto;  
+        height: auto; 
     }
 }
+ 
+.summer-element {
+    display: none;
+}
 
-/* Conteneur des boutons */
-.theme-toggle {
+.winter-element {
+    display: none;
+}
+
+body.summer .summer-element {
+    display: block; 
+}
+
+body.winter .winter-element {
+    display: block;
+}
+
+ /* Conteneur des boutons */
+ .theme-toggle {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -37,26 +55,29 @@
     width: 60%;
     margin: 50px auto 0 auto;
     transition: background-color 0.3s ease;
-}
-
-.theme-toggle h1 {
+ }
+ 
+ 
+ .theme-toggle h1 {
     color: white;
     width: 100%;
     text-align: center;
     font-size: var(--font-size-2);
-}
-
-.buttons-wrapper {
+ }
+ 
+ 
+ .buttons-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
     width: 100%;
-}
-
-/* Boutons individuels */
-.theme-button {
+ }
+ 
+ 
+ /* Boutons individuels */
+ .theme-button {
     background-color: white;
     border: none;
     border-radius: 40%;
@@ -68,55 +89,78 @@
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.theme-button i {
+ }
+ 
+ 
+ .theme-button i {
     font-size: var(--font-size-3);
     color: #87CEEB; /* Couleur par défaut de l'icône */
-}
-
-/* Effet au survol */
-.theme-button:hover {
+ }
+ 
+ 
+ /* Effet au survol */
+ .theme-button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Couleurs pour Winter */
-#winter-button i {
+ }
+ 
+ 
+ /* Couleurs pour Winter */
+ #winter-button i {
     color: #1E90FF;
-}
-
-/* Couleurs pour Summer */
-#summer-button i {
+ }
+ 
+ 
+ /* Couleurs pour Summer */
+ #summer-button i {
     color: #FFA500;
-}
-
-/* Thème actif (par exemple, Summer) */
-.theme-toggle.summer {
+ }
+ 
+ 
+ /* Thème actif (par exemple, Summer) */
+ .theme-toggle.summer {
     background-color: #FFD700;
-}
-
-.theme-toggle.summer #winter-button i {
+ }
+ 
+ 
+ .theme-toggle.summer #winter-button i {
     color: #FFD700; /* Couleur atténuée pour le flocon en Summer */
-}
-
-.theme-toggle.summer #summer-button i {
+ }
+ 
+ 
+ .theme-toggle.summer #summer-button i {
     color: #FFA500; /* Soleil en jaune/orange */
-}
-
-/* Thème actif (par exemple, Winter) */
-.theme-toggle.winter {
+ }
+ 
+ 
+ /* Thème actif (par exemple, Winter) */
+ .theme-toggle.winter {
     background-color: #87CEEB;
-}
-
-.theme-toggle.winter #winter-button i {
+ }
+ 
+ 
+ .theme-toggle.winter #winter-button i {
     color: #1E90FF;
-}
-
-.theme-toggle.winter #summer-button i {
+ }
+ 
+ 
+ .theme-toggle.winter #summer-button i {
     color: #87CEEB;
-}
+ }
 
+h1 {
+   font-size: var(--font-size-3);
+   color: var(--text-color-1);
+   margin: var(--gap-medium);
+}
+ 
+.arc-title {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: var(--gap-large);
+}
+ 
 h2 {
     font-size: var(--font-size-3);
     font-weight: bold;
@@ -124,7 +168,7 @@ h2 {
     margin-bottom: 50px;
     text-align: center;
 }
-
+ 
 .coach-section {
     padding: 20px 0;
     margin: 6%;
@@ -137,7 +181,7 @@ h2 {
     margin-right: 60px;
     gap: 100px;
 }
-
+ 
 .image-container {
     background-color: white;
     display: flex;
@@ -149,9 +193,9 @@ h2 {
 .image-container img {
     margin: 10px;
     width: var(--coach-img-size);
-    height: auto;  
+    height: auto; 
 }
-
+ 
 .coach-unique-content p {
     font-size: var(--font-size-1);
     font-weight: bold;
