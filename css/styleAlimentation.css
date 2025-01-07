@@ -77,19 +77,21 @@ h3 {
 }
 
 .image-container {
+    margin: var(--gap-small);
     background-color: var(--text-color-1);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 300px;
+    width: auto;
+    height: auto;
     border-radius: 12px;
 }
 
 
 .image-container img {
-    width: 96%;
-    height: 95%;  
+    margin: var(--gap-large);
+    width: auto;
+    height: auto;  
     border-radius: 15px;
 }
 
