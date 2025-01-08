@@ -1,3 +1,15 @@
+@media (max-width: 700px) {
+    .nos-clubs {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .notre-video video{
+        width: 25%;
+        height: auto;   
+        margin-top: 25px;
+    }
+}
+
 .offre-section {
     position: relative;
     background-image: url("../media/image/fondOffre.webp");
@@ -91,14 +103,6 @@
     height: auto;
 }
 
-@media (max-width: 700px) {
-    .nos-clubs {
-        flex-direction: column;
-        margin-top: 5%;
-    }
-    
-}
-
 .nos-clubs-section h2 {
     position: absolute;
     top: 0;
@@ -112,7 +116,7 @@
 .nos-clubs p {
     flex: 1;
     text-align: left;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
     color: var(--text-color-1);
     line-height: 3;
 }
@@ -128,13 +132,26 @@
     justify-content: center;
     align-items: center;
     margin: 7.5%;
+    position: relative;
 }
 
 .notre-video {
     display: flex;
-    justify-content: center;
-    background-color: var(--component-color);
-    padding: 40px;
-    border-radius: 15px;
+    padding-top: var(--gap-large);
     width: 100%;
+}
+
+.video-section h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--text-color-1);
+    text-align: center;
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+.notre-video video{
+    width: 50%;
+    height: auto;   
 }
