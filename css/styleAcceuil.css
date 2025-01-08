@@ -3,7 +3,8 @@
     background-image: url("../media/image/fondOffre.webp");
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: auto;
+    padding: 10%;
     color: var(--text-color-2);
     text-align: center;
     display: flex;
@@ -12,23 +13,23 @@
 }
 
 .offre-content h1 {
-    font-size: 30px;
+    font-size: var(--font-size-large);
     font-weight: bold;
 }
 
 .offre-content p {
-    margin: 20px;
-    font-size: 18px;
+    margin: 2vh;
+    font-size: var(--font-size-small);
 }
 
 .offre-content a {
     background-color: var(--button-color);
     color: var(--text-color-1);
     border: none;
-    padding: 10px 20px;
-    margin: 10;
+    padding: 2% 10%;
+    margin: 1.5%;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     cursor: pointer;
     text-decoration: none;
 }
@@ -42,26 +43,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 10vh;
 }
 
 .notre-histoire {
     background-color: var(--component-color);
-    padding: 20px 40px;
     border-radius: 15px;
-    width: 1604px;
+    width: 85%;
 }
 
 .notre-histoire h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: var(--font-size-large);
+    padding-top: var(--gap-medium);
     font-weight: bold;
     color: var(--nav-color);
-    margin-bottom: 20px;
 }
 
 .notre-histoire p {
-    padding: 30px;
+    padding: var(--gap-large);
     text-align: left;
     font-size: 16px;
     color: var(--text-color-2);
@@ -69,43 +69,56 @@
 }
 
 /* Section "Nos Clubs" */
+
+
 .nos-clubs-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    margin: 7.5%;
     position: relative;
 }
 
 .nos-clubs {
     display: flex;
-    padding-top: 100px;
-    width: 1604px;
+    padding-top: var(--gap-large);
+    width: 100%;
     gap: 20px;
+}
+
+.nos-clubs iframe{
+    width : 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .nos-clubs {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    
 }
 
 .nos-clubs-section h2 {
     position: absolute;
     top: 0;
-    left: 150px;
-    padding-top: 50px;
-    font-size: 50px;
-    font-weight: bold;
+    left: 0;
     color: var(--text-color-1);
+    text-align: center;
+    font-size: var(--font-size-large);
+    font-weight: bold;
 }
 
 .nos-clubs p {
     flex: 1;
-    max-width: 800px;
     text-align: left;
-    font-size: 16px;
+    font-size: var(--font-size-small);
     color: var(--text-color-1);
     line-height: 3;
 }
 
 .nos-clubs iframe {
     flex: 1;
-    max-width: 800px;
     border: none;
 }
 
@@ -114,7 +127,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px;
+    margin: 7.5%;
 }
 
 .notre-video {
@@ -123,5 +136,5 @@
     background-color: var(--component-color);
     padding: 40px;
     border-radius: 15px;
-    width: 1604px;
+    width: 100%;
 }
