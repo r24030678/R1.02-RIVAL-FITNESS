@@ -51,6 +51,10 @@
         --nav-pad-width: 8px;
         --nav-pad-heigh: 5px;
     }
+
+    header img {
+        height: 25px;
+    }
 }
 
 /* Thème Hiver (winter) */
