@@ -8,7 +8,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     color: var(--text-color-2);
-    margin: 10px;
+    margin: var(--gap-medium);
     text-align: center;
 }
 
@@ -18,8 +18,8 @@ h3 {
 
 .nos-plats-section {
     background-color: var(--component-color);
-    padding: 10px;
     margin: var(--gap-large);
+    padding: var(--gap-medium);
     height: auto;
 }
 
@@ -65,8 +65,8 @@ h3 {
 
 .plat-section {
     background-color: var(--component-color);
-    padding: 20px 0;
     margin: var(--gap-large);
+    padding: var(--gap-medium);
     height: auto;
 }
 
@@ -89,7 +89,7 @@ h3 {
 
 
 .image-container img {
-    margin: var(--gap-large);
+    margin: var(--gap-small);
     width: auto;
     height: auto;  
     border-radius: 15px;

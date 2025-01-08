@@ -29,7 +29,7 @@
 
     --gap-large: 80px;
     --gap-medium: 20px; 
-    --gap-small: 10px;
+    --gap-small: 13px;
 
     --nav-pad-width: 15px;
     --nav-pad-heigh: 8px;
@@ -39,7 +39,7 @@
     :root {
         --font-size-large: 25px;
         --font-size-medium: 10px;
-        --font-size-small: 7px;
+        --font-size-small: 8px;
 
         --logo-size-large: 100px;
         --logo-size-small: 40px;
