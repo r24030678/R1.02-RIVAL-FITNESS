@@ -264,6 +264,7 @@ main {
 
 .pied-de-page-section ul li a {
     text-decoration: none;  
+    color: var(--text-color-1);
 }
 
 .pied-de-page-section ul li a:visited {
