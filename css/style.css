@@ -8,7 +8,7 @@
 
 /* Définition des variables de couleurs globales */
 :root {
-    --background-color: #252932;
+    --background-coIlianlor: #252932;
     --header-footer-color: #A3AEB6;
     --nav-color: #2f5873;
     --button-color: #4691a4;
@@ -97,7 +97,7 @@ header {
     justify-content: space-around;
     align-items: center;
     font-size: var(--font-size-medium);
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--text-color-1);
 }
 
@@ -119,6 +119,7 @@ header p {
     padding: var(--gap-small) var(--gap-medium);
     z-index: 1;
     transition: top 0.3s ease-in-out;
+    font-weight: bolder;
 }
 
 .navbar.sticky {
