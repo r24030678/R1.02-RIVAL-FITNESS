@@ -21,8 +21,8 @@
     --submit-btn-hover-color: rgb(68, 170, 136);
 
     --font-size-large: 40px;
-    --font-size-medium: 20px;
-    --font-size-small: 12px;
+    --font-size-medium: 23px;
+    --font-size-small: 15px;
 
     --logo-size-large: 200px;
     --logo-size-small: 70px;
@@ -243,7 +243,7 @@ main {
     gap: var(--gap-medium);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
 }
 @media (max-width: 700px) {
@@ -254,7 +254,7 @@ main {
 
 .pied-de-page-section p {
     color: var(--text-color-1);
-    font-size: 15px;
+    font-size: var(--font-size-medium);
     font-weight: bold;
 }
 
@@ -263,7 +263,7 @@ main {
 }
 
 .pied-de-page-section li{
-    font-size: 12px;
+    font-size: var(--font-size-medium);
     color: var(--text-color-1);
 }
 
