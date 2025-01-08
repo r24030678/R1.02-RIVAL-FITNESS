@@ -60,9 +60,9 @@
 /* Thème Hiver (winter) */
 body.winter {
     --background-color: #252932;
-    --header-footer-color: #A3AEB6;
+    --header-footer-color: #404950;
     --nav-color: #2f5873;
-    --button-color: #4691a4;
+    --button-color: #13292e;
     --button-hover-color: #3a7f90;
     --component-color: #D9D9D9;
     --footer-1-color: #727272;
