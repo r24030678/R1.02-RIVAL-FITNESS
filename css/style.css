@@ -107,29 +107,6 @@ header p {
     gap: var(--gap-small); /* Espace entre l'image et le texte */
 }
 
-/* Idéalement faudrait virer ces trois selecteur d'id et redimensionner les img */
-#taille-1 {
-    width:52px;
-    height:40px;
-}
-
-#taille-2 {
-    width:40px;
-    height:37px;
-}
-
-#taille-3 {
-    width:32px;
-    height:36px;
-}
-
-/* Et faudrait mettre un truc comme ca
-header p img {
-    width: 40px;
-    height: 40px;
-}
-*/
-
 .navbar {
     position: sticky;
     top: 0;
@@ -230,15 +207,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: var(--gap-large);
+    justify-content: center;
+    gap: var(--gap-medium);
+    padding: var(--gap-medium);
 }
 
 .nos-reseaux div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
     gap: var(--gap-medium);
     margin-top: 10px;
 }
@@ -258,36 +235,37 @@ main {
     background-color: var(--header-footer-color);
     padding: 20px;
     height: auto;
-}
-
-.pied-de-page{
+    gap: var(--gap-medium);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    margin: auto;
+}
+@media (max-width: 700px) {
+    .pied-de-page-section {
+        justify-content: left;
+    }
 }
 
-.pied-de-page p {
+.pied-de-page-section p {
     color: var(--text-color-1);
     font-size: 15px;
     font-weight: bold;
 }
 
-.pied-de-page ul {
+.pied-de-page-section ul {
     list-style-type: none;
 }
 
-.pied-de-page li{
+.pied-de-page-section li{
     font-size: 12px;
     color: var(--text-color-1);
 }
 
-.pied-de-page ul li a {
+.pied-de-page-section ul li a {
     text-decoration: none;  
 }
 
-.pied-de-page ul li a:visited {
+.pied-de-page-section ul li a:visited {
     color: var(--text-color-1);
 }
