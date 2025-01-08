@@ -21,7 +21,7 @@
     --submit-btn-hover-color: rgb(68, 170, 136);
 
     --font-size-large: 40px;
-    --font-size-medium: 14px;
+    --font-size-medium: 20px;
     --font-size-small: 12px;
 
     --logo-size-large: 200px;
@@ -202,8 +202,8 @@ main {
 
 #scrollToTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2vh;
+    right: 2vh;
     padding: 10px 15px;
     background-color: var(--button-color);
     color: var(--text-color-1);
@@ -214,7 +214,7 @@ main {
     cursor: pointer;
     display: none; /* Initialement masqué */
     z-index: 1000;
-  }
+}
   
 #scrollToTopBtn:hover {
     background-color: var(--button-hover-color)
@@ -223,7 +223,7 @@ main {
 /* Section Nos Réseaux */
 .nos-reseaux-section {
     background-color: var(--footer-1-color);
-    height: 50px;
+    height: auto;
 }
 
 .nos-reseaux {
@@ -231,12 +231,19 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 5px;
+    padding: var(--gap-large);
 }
 
-.nos-reseaux p{
+.nos-reseaux div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--gap-medium);
+    margin-top: 10px;
+}
+
+.nos-reseaux p {
     color: var(--text-color-1);
     font-size: 20px;
     font-weight: bold;
@@ -250,7 +257,7 @@ main {
 .pied-de-page-section {
     background-color: var(--header-footer-color);
     padding: 20px;
-    height: 80px;
+    height: auto;
 }
 
 .pied-de-page{
